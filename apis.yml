@@ -1,8 +1,26 @@
 aid: skip
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/skip.png
 name: Skip
-description: 'Skip is a company surfaced as a portfolio company of bain-capital-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: ai-infrastructure. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Skip (originally Skip Protocol, skip.money) is the interchain infrastructure
+  company that rebranded to Cosmos Labs and is now a wholly-owned subsidiary of the
+  Interchain Foundation, leading engineering and growth for the Cosmos blockchain
+  stack. Its skip.money and skip.build domains now redirect to cosmos.network. The
+  team maintains the open-source Cosmos SDK, the Inter-Blockchain Communication protocol
+  (IBC), the CometBFT consensus engine, and Cosmos EVM — the most widely adopted Layer
+  1 blockchain toolkit, deployed across 200+ chains. There is no independent Skip-branded
+  hosted API; the public developer surface is the Cosmos SDK node REST + gRPC interfaces
+  documented at docs.cosmos.network, with source on the cosmos GitHub organization.'
 url: https://raw.githubusercontent.com/api-evangelist/skip/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +28,22 @@ x-backed-by:
 - bain-capital-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-former-domains:
+- https://skip.money/
+- https://skip.build/
+- https://cosmoslabs.io/
+x-successor: Cosmos Labs (Interchain Foundation)
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Ai Infrastructure
+- Blockchain
+- Interchain
+- Cosmos
+- Infrastructure
+- Developer Tools
+- Web3
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +51,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/skip-domain-security.yml
 - type: Website
-  url: https://skip.money/
+  url: https://cosmos.network/
+- type: Documentation
+  url: https://docs.cosmos.network/
+- type: APIReference
+  url: https://docs.cosmos.network/
+- type: ChangeLog
+  url: https://docs.cosmos.network/sdk/latest/changelog/release-notes
+- type: LLMsTxt
+  url: llms/skip-llms.txt
+- type: GitHubOrganization
+  url: https://github.com/cosmos
+- type: Support
+  url: https://discord.gg/interchain
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
